@@ -1,0 +1,11 @@
+joint_group_velocity_controller:  
+  type: velocity_controllers/JointGroupVelocityController
+  
+  joints:    
+    - $(arg arm_id)_joint1
+    - $(arg arm_id)_joint2    
+    - $(arg arm_id)_joint3
+    - $(arg arm_id)_joint4    
+    - $(arg arm_id)_joint5
+    - $(arg arm_id)_joint6    
+    - $(arg arm_id)_joint7

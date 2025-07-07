@@ -1,0 +1,11 @@
+joint_group_position_controller:  
+  type: position_controllers/JointGroupPositionController
+  
+  joints:    
+    - $(arg arm_id)_joint1
+    - $(arg arm_id)_joint2    
+    - $(arg arm_id)_joint3
+    - $(arg arm_id)_joint4    
+    - $(arg arm_id)_joint5
+    - $(arg arm_id)_joint6    
+    - $(arg arm_id)_joint7

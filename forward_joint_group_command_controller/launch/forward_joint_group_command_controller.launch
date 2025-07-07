@@ -1,0 +1,12 @@
+<?xml version="1.0" ?> 
+<launch> 
+  <include file="$(find franka_control)/launch/franka_control.launch" pass_all_args="true"/> 
+    
+  
+  <rosparam command="load" file="$(find forward_joint_group_command_controller)/config/orward_joint_group_command.yaml" subst_value="true" /> 
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"  args="forward_joint_group_command_controller"/> 
+    <arg name="robot_ip" default="10.224.20.198"/> 
+    <arg name="load_gripper" default="false"/> 
+    <arg name="arm_id" default="panda"/> 
+  
+</launch>
